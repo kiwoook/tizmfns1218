@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum App</title>
+</head>
+
+<body>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <button>Log In</button>
+    </form>
+    <div id="box">
+        <div>
+            <h2 id="clock">00:00:00</h2>
+        <div id="wth">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+        
+    </div>
+    
+
+    <div class="centerBox">
+        <h1 id="greeting" class="hidden"></h1>
+    </div>
+
+
+    <div class="main_box">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="fas fa-list-ul"></i>
+            </label>
+        </div>
+        <div class="sidebar_menu">
+            <div class="logo">
+                <p>해야할 일</p>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="menu">
+                <ul id="todo-list">
+                </ul>
+            </div>
+            
+            <div class="todo-div">
+                <form id="todo-form">
+                    <input type="text" placeholder="Wrtite a To Do and Press Enter" style="text-align:center; width:200px; height: 30px">
+                </form>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="centerBox">
+        <div id="quote">
+            <span></span>
+            <br>
+            <span id="author"></span>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/e2bf397c5b.js" crossorigin="anonymous"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
