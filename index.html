@@ -6,23 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css"/>
     <title>Momentum App</title>
 </head>
 
 <body>
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <button>Log In</button>
-    </form>
+    <div id="login-div">
+        <form class="hidden" id="login-form">
+            <input required maxlength="15" type="text" placeholder="What is your name?" />
+            <button>Log In</button>
+        </form>
+    </div>
+    
     <div id="box">
-        <div>
+        
+        <div class="centerBox">
             <h2 id="clock">00:00:00</h2>
+        </div>
         <div id="wth">
             <span></span>
             <span></span>
             <span></span>
+        
         </div>
-        </div>
+        
+        
         
     </div>
     
@@ -36,7 +44,7 @@
         <input type="checkbox" id="check">
         <div class="btn_one">
             <label for="check">
-                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-angle-double-right"></i>
             </label>
         </div>
         <div class="sidebar_menu">
@@ -45,7 +53,7 @@
             </div>
             <div class="btn_two">
                 <label for="check">
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-angle-double-left"></i>
                 </label>
             </div>
             <div class="menu">
