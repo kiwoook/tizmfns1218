@@ -24,7 +24,7 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "✅";
+    button.innerText = "✓"
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
@@ -32,6 +32,12 @@ function paintToDo(newTodo) {
   }
   function handleToDoSubmit(event) {
     event.preventDefault();
+    let obj_length = Object.keys(toDos).length;
+    if(obj_length > 12)
+    {
+      alert('공간이 부족합니다 :(');
+      return
+    }
     const newTodo = toDoInput.value;
     toDoInput.value = "";
     const newTodoObj = {
@@ -42,7 +48,6 @@ function paintToDo(newTodo) {
     paintToDo(newTodoObj);
     saveToDos();
   }
-  
   toDoForm.addEventListener("submit", handleToDoSubmit);
   const savedToDos = localStorage.getItem(TODOS_KEY);
   if (savedToDos !== null) {
