@@ -13,9 +13,10 @@ html {
 }
 
 #login-div {
+    z-index: 2;
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 3%;
+    right: 3%;
 }
 
 .hidden {
@@ -27,7 +28,12 @@ html {
     top: 65%;
 }
 
-
+.googleSearchBox {
+    position: absolute;
+    
+    top:50%;
+    
+}
 
 
 .bgImg {
@@ -50,6 +56,7 @@ html {
     font-family: 'Nanum Myeongjo', serif;
     font-size:8rem
 }
+
 
 .centerBox {
     display:flex;

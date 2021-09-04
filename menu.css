@@ -43,14 +43,14 @@
 
 .sidebar_menu .menu{
     position: absolute;
-    top: 80px;
+    top: 55px;
     width: 100%;
 
 }
 
 .sidebar_menu .menu li{
     font-family: 'Noto Sans KR', sans-serif;
-    margin-top: 6px;
+    margin-top: 8px;
     padding: 14px 20px;
     text-align: center;
     font-size: 2rem;
