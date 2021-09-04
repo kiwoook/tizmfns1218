@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100&display=swap');
 
 /*
@@ -79,20 +80,14 @@
     font-size:30px;
     font-weight: 700;
     position: absolute;
-    left: 16px;
+    left: -40px;
     line-height: 60px;
     cursor : pointer;
     opacity: 1;
     
-    transition: fadeIn 2s linear;
     
-}
-
-.main_box .btn_one i{
+    animation: sidebarAnimation 1s linear 1.5s forwards;
     
-    opacity: 1;
-    
-    transition: left 1s linear;
     
 }
 
@@ -102,7 +97,7 @@
     position: absolute;
     left: 240px;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.01s linear;
 }
 
@@ -126,8 +121,10 @@
 }
 
 #check:checked ~ .btn_one i{
-    opacity: 0;
+    
+    display:none;
     left: 240px;
+    
 }
 
 #check:checked ~ .sidebar_menu .btn_two i{
@@ -154,10 +151,12 @@
 
 @keyframes sidebarAnimation {
     from{
-        left:-280px;
+        left:-40px;
         
     }
     to{
-        left:0px;
+        left:16px;
     }
 }
+
+
