@@ -16,8 +16,9 @@ html {
     z-index: 2;
     position: absolute;
     top: 3%;
-    right: 3%;
+    left: 85%;
 }
+
 
 .hidden {
     display: none;
