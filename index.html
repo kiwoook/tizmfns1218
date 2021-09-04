@@ -14,8 +14,8 @@
 <body>
     <div id="login-div">
         <form class="hidden" id="login-form">
-            <input required maxlength="15" type="text" placeholder="What is your name?" />
-            <button>Log In</button>
+            <input class="login-input"required maxlength="15" type="text" placeholder="여기에 이름을 입력해주세요" 
+            style="text-align: center; color:white;" />
         </form>
     </div>
 
@@ -38,7 +38,6 @@
         <form autocomplete="off" name="search" method=get action="https://www.google.co.kr/search" target="_blank">
             <input type=text name="q" class="googleInput"  maxlength=255 value="" style="text-align: center;"
             onmouseout="document.search.q.value = ''">
-            
         </form>
             <i class="fas fa-search"></i>
     </div>
