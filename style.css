@@ -16,9 +16,13 @@ html {
 #login-div {
     z-index: 2;
     position: absolute;
-    top: 65%;
+    top: 70%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+
+#login-form {
+    animation: fadeIn 2s ease-in-out;
 }
 
 .login-input {
@@ -48,12 +52,12 @@ html {
 
 #greeting {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left:50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
 
-    animation: fadeIn 2s linear;
+    animation: fadeIn 3s linear;
 }
 
 .googleSearchBox {

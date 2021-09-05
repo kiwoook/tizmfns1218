@@ -24,7 +24,8 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "✓"
+    button.innerText = "✔️";
+    button.classList.add("deleteButton");
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
@@ -33,7 +34,7 @@ function paintToDo(newTodo) {
   function handleToDoSubmit(event) {
     event.preventDefault();
     let obj_length = Object.keys(toDos).length;
-    if(obj_length > 12)
+    if(obj_length > 10)
     {
       alert('공간이 부족합니다 :(');
       return
